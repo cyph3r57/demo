@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Bootstrap 4 - Migration</title>
+    <!-- Required meta tags -->
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      
+    <link href='fontawesome-free-5.10.2-web/css/all.css' rel='stylesheet'> <!--load all styles -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </head>
+  <body>
+<div class="container-fluid">
+    <div class="row">
+       <div class="col">
+           <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="index.html">Home</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#first_item">Top <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="grid-system.html"> Grid System</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="margin-padding.html"> Margin Padding</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="typography.html"> Typography</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="colors.html"> Colors</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="migration.html"> Migration</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Component
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="alerts.html">Alerts</a>
+          <a class="dropdown-item" href="badge.html">Badge</a>
+          <a class="dropdown-item" href="breadcrumb.html">Breadcrumb</a>
+          <a class="dropdown-item" href="buttons.html">Buttons</a>
+          <a class="dropdown-item" href="card.html">Card</a>
+          <a class="dropdown-item" href="carousel.html">Carousel</a>
+          <a class="dropdown-item" href="collapse.html">Collapse</a>
+          <a class="dropdown-item" href="dropdown.html">Dropdown</a>
+          <a class="dropdown-item" href="form.html">Form</a>
+          <a class="dropdown-item" href="jumbotron.html">Jumbotron</a>
+          <a class="dropdown-item" href="listgroup.html">List group</a>
+          <a class="dropdown-item" href="media-object.html">Media Object</a>
+          <a class="dropdown-item" href="modal.html">Modal</a>
+          <a class="dropdown-item" href="navbar.html">Navbar</a>
+          <a class="dropdown-item" href="navs.html">Navs</a>
+          <a class="dropdown-item" href="pagination.html">Pagination</a>
+          <a class="dropdown-item" href="progress.html">Progress</a>
+          <a class="dropdown-item" href="spinner.html">Spinner</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+       </div>
+        
+    </div>
+</div>
+  
+<div class="container" style="margin-top: 80px;">
+
+<div class="row" id="first_item">
+    <div class="col">
+       <h1>Main changes compared to version 3</h1>
+<ul>
+    <li>A new grid system, more flexibile</li>
+    <li>Little change in <span class='badge badge-primary'>form</span> code</li>
+    <li>New class attribute in <span class='badge badge-primary'>input-group</span> element. It has dropped <span class='badge badge-warning'>.input-group-addon</span> and <span class='badge badge-warning'>.input-group-btn</span> for two new classes, <span class='badge badge-success'>.input-group-prepend</span> and <span class='badge badge-success'>.input-group-append.</span> </li>
+    <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">@</span>
+  </div>
+  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+<li>Suppressing of <span class='badge badge-primary'>-xs</span> infix in grid options</li>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">Extra Small <small> < 576px </small></th>
+      <th scope="col">Small</th>
+      <th scope="col">Medium</th>
+      <th scope="col">Large</th>
+      <th scope="col">Extra Large</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Max Container Width</td>
+        <td><span class='badge badge-success'>.col-</span></td>
+        <td><span class='badge badge-primary'>.col-sm</span></td>
+        <td><span class='badge badge-warning'>.col-md</span></td>
+        <td><span class='badge badge-danger'>.col-lg</span></td>
+        <td><span class='badge badge-secondary'>.col-xl</span></td>
+    </tr>
+  </tbody>
+</table>
+</ul>
+      
+        <li>Dropped panels, thumbnails, and wells for a new all-encompassing component, <span class='badge badge-primary'>cards.</span></li>
+        <li>Dropped Glyphicons icon font. Now it's reccomended to use external library like <span class='badge badge-primary'>Font Awesome.</span></li>
+        <li>New margin and padding classes</li>
+        <li><span class='badge badge-primary'>Images</span> classes renamed:
+        <ul>
+            <li>.img-responsive to <span class='badge badge-success'>.img-fluid</span></li>
+            <li>.img-rounded to <span class='badge badge-success'>.rounded</span></li>
+            <li>.img-circle to <span class='badge badge-success'>.rounded-circle</span></li>
+        </ul>
+        </li>
+       <li><span class='badge badge-warning'>default</span> color renamed in <span class='badge badge-secondary'>secondary</span></li>
+        <p>For instance .btn-default become <span class='badge badge-secondary'>.btn-secondary</span></p>
+        
+        <li>Badge and panel now is the same thing so <span class='badge badge-danger'>label</span> is dropped.</li>
+        
+        <li>Carousel: the item class becomes <span class='badge badge-success'>carousel-item</span> instead of <span class='badge badge-danger'>item</span> </li>
+        <li>Carousel control: the item class becomes <span class='badge badge-success'>carousel-control-prev</span> and <span class='badge badge-success'>carousel-control-next</span> </li>
+        
+    </div>  
+</div>
+
+
+
+
+
+</div>
+  </body>
+</html>

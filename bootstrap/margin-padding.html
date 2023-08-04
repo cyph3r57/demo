@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Bootstrap 4 - Buttons</title>
+    <!-- Required meta tags -->
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      
+    <link href='fontawesome-free-5.10.2-web/css/all.css' rel='stylesheet'> <!--load all styles -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </head>
+  <body>
+<div class="container-fluid">
+    <div class="row">
+       <div class="col">
+           <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="index.html">Home</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#first_item">Top <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="grid-system.html"> Grid System</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="margin-padding.html"> Margin Padding</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="typography.html"> Typography</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="colors.html"> Colors</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="migration.html"> Migration</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Component
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="alerts.html">Alerts</a>
+          <a class="dropdown-item" href="badge.html">Badge</a>
+          <a class="dropdown-item" href="breadcrumb.html">Breadcrumb</a>
+          <a class="dropdown-item" href="buttons.html">Buttons</a>
+          <a class="dropdown-item" href="card.html">Card</a>
+          <a class="dropdown-item" href="carousel.html">Carousel</a>
+          <a class="dropdown-item" href="collapse.html">Collapse</a>
+          <a class="dropdown-item" href="dropdown.html">Dropdown</a>
+          <a class="dropdown-item" href="form.html">Form</a>
+          <a class="dropdown-item" href="jumbotron.html">Jumbotron</a>
+          <a class="dropdown-item" href="listgroup.html">List group</a>
+          <a class="dropdown-item" href="media-object.html">Media Object</a>
+          <a class="dropdown-item" href="modal.html">Modal</a>
+          <a class="dropdown-item" href="navbar.html">Navbar</a>
+          <a class="dropdown-item" href="navs.html">Navs</a>
+          <a class="dropdown-item" href="pagination.html">Pagination</a>
+          <a class="dropdown-item" href="progress.html">Progress</a>
+          <a class="dropdown-item" href="spinner.html">Spinner</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+       </div>
+        
+    </div>
+</div>
+  
+<div class="container" style="margin-top: 80px;">
+
+<div class="row" id="first_item">
+    <div class="col">
+        <h2 class="text-info">Margin & padding</h2>
+        <p>Bootstrap 4 introduced a very simple method to manage padding and margins.</p>
+        <p>the suffix <b>m-</b> is used for margin and <b>p-</b> for padding</p>
+        <p>Where sides is one of:</p>
+        <ul>
+  <li><code class="highlighter-rouge">t</code> - for classes that set <code class="highlighter-rouge">margin-top</code> or <code class="highlighter-rouge">padding-top</code></li>
+  <li><code class="highlighter-rouge">b</code> - for classes that set <code class="highlighter-rouge">margin-bottom</code> or <code class="highlighter-rouge">padding-bottom</code></li>
+  <li><code class="highlighter-rouge">l</code> - for classes that set <code class="highlighter-rouge">margin-left</code> or <code class="highlighter-rouge">padding-left</code></li>
+  <li><code class="highlighter-rouge">r</code> - for classes that set <code class="highlighter-rouge">margin-right</code> or <code class="highlighter-rouge">padding-right</code></li>
+  <li><code class="highlighter-rouge">x</code> - for classes that set both <code class="highlighter-rouge">*-left</code> and <code class="highlighter-rouge">*-right</code></li>
+  <li><code class="highlighter-rouge">y</code> - for classes that set both <code class="highlighter-rouge">*-top</code> and <code class="highlighter-rouge">*-bottom</code></li>
+  <li>blank - for classes that set a <code class="highlighter-rouge">margin</code> or <code class="highlighter-rouge">padding</code> on all 4 sides of the element</li>
+</ul>
+   <p>Where size is one of:</p>
+   <ul>
+  <li><code class="highlighter-rouge">0</code> - for classes that eliminate the <code class="highlighter-rouge">margin</code> or <code class="highlighter-rouge">padding</code> by setting it to <code class="highlighter-rouge">0</code></li>
+  <li><code class="highlighter-rouge">1</code> - (by default) for classes that set the <code class="highlighter-rouge">margin</code> or <code class="highlighter-rouge">padding</code> to <code class="highlighter-rouge">$spacer * .25</code></li>
+  <li><code class="highlighter-rouge">2</code> - (by default) for classes that set the <code class="highlighter-rouge">margin</code> or <code class="highlighter-rouge">padding</code> to <code class="highlighter-rouge">$spacer * .5</code></li>
+  <li><code class="highlighter-rouge">3</code> - (by default) for classes that set the <code class="highlighter-rouge">margin</code> or <code class="highlighter-rouge">padding</code> to <code class="highlighter-rouge">$spacer</code></li>
+  <li><code class="highlighter-rouge">4</code> - (by default) for classes that set the <code class="highlighter-rouge">margin</code> or <code class="highlighter-rouge">padding</code> to <code class="highlighter-rouge">$spacer * 1.5</code></li>
+  <li><code class="highlighter-rouge">5</code> - (by default) for classes that set the <code class="highlighter-rouge">margin</code> or <code class="highlighter-rouge">padding</code> to <code class="highlighter-rouge">$spacer * 3</code></li>
+  <li><code class="highlighter-rouge">auto</code> - for classes that set the <code class="highlighter-rouge">margin</code> to auto</li>
+</ul>
+    </div>
+</div>
+
+
+
+</div>
+  </body>
+</html>

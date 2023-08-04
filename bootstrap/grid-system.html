@@ -1,0 +1,738 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Bootstrap 4 - Grid System</title>
+    <!-- Required meta tags -->
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      
+    <link href='fontawesome-free-5.10.2-web/css/all.css' rel='stylesheet'> <!--load all styles -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>  
+  </head>
+  <body>
+<div class="container-fluid">
+    <div class="row">
+       <div class="col">
+           <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="index.html">Home</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#first_item">Top <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="grid-system.html"> Grid System</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="margin-padding.html"> Margin Padding</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="typography.html"> Typography</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="colors.html"> Colors</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="migration.html"> Migration</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Component
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="alerts.html">Alerts</a>
+          <a class="dropdown-item" href="badge.html">Badge</a>
+          <a class="dropdown-item" href="breadcrumb.html">Breadcrumb</a>
+          <a class="dropdown-item" href="buttons.html">Buttons</a>
+          <a class="dropdown-item" href="card.html">Card</a>
+          <a class="dropdown-item" href="carousel.html">Carousel</a>
+          <a class="dropdown-item" href="collapse.html">Collapse</a>
+          <a class="dropdown-item" href="dropdown.html">Dropdown</a>
+          <a class="dropdown-item" href="form.html">Form</a>
+          <a class="dropdown-item" href="jumbotron.html">Jumbotron</a>
+          <a class="dropdown-item" href="listgroup.html">List group</a>
+          <a class="dropdown-item" href="media-object.html">Media Object</a>
+          <a class="dropdown-item" href="modal.html">Modal</a>
+          <a class="dropdown-item" href="navbar.html">Navbar</a>
+          <a class="dropdown-item" href="navs.html">Navs</a>
+          <a class="dropdown-item" href="pagination.html">Pagination</a>
+          <a class="dropdown-item" href="progress.html">Progress</a>
+          <a class="dropdown-item" href="spinner.html">Spinner</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+       </div>
+        
+    </div>
+</div>
+      
+<div class="container" style="margin-top: 80px;">
+    <div class="row">
+        <div class="col">
+            <h1 class="text-primary">Container</h1>
+        </div>
+    </div>
+    <div class='row'>
+        <div class="col bg-primary text-white">
+            <p>SOME TEXT</p>
+        </div>
+        <div class="col bg-secondary text-white">
+            <p>SOME TEXT</p>
+        </div>
+    </div>
+</div>
+      
+<div class="container-fluid" style="margin-top: 80px;">
+     <div class="row">
+        <div class="col">
+            <h1 class="text-primary">Container-Fluid</h1>
+        </div>
+    </div>
+    <div class='row'>
+        <div class="col bg-primary text-white">
+            <p>SOME TEXT</p>
+        </div>
+        <div class="col bg-secondary text-white">
+            <p>SOME TEXT</p>
+        </div>
+    </div>
+</div>
+      
+<div class="container" style="margin-top: 80px;">
+
+<div class="row" id="first_item">
+    <div class="col">
+        <h1 class="text-primary">Grid System - Basic example</h1>
+  
+
+<p>12 column, same space</p>
+<div class="row">
+    
+    <div class="col bg-primary text-white">
+           <p>SOME TEXT</p>
+    </div>
+    <div class="col bg-secondary text-white">
+           <p>SOME TEXT</p>
+    </div>
+    <div class="col bg-primary text-white">
+           <p>SOME TEXT</p>
+    </div>
+    <div class="col bg-secondary text-white">
+           <p>SOME TEXT</p>
+    </div>
+    <div class="col bg-primary text-white">
+           <p>SOME TEXT</p>
+    </div>
+    <div class="col bg-secondary text-white">
+           <p>SOME TEXT</p>
+    </div>
+    <div class="col bg-primary text-white">
+           <p>SOME TEXT</p>
+    </div>
+    <div class="col bg-secondary text-white">
+           <p>SOME TEXT</p>
+    </div>
+    <div class="col bg-primary text-white">
+           <p>SOME TEXT</p>
+    </div>
+    <div class="col bg-secondary text-white">
+           <p>SOME TEXT</p>
+    </div>
+    <div class="col bg-primary text-white">
+           <p>SOME TEXT</p>
+    </div>
+    <div class="col bg-secondary text-white">
+           <p>SOME TEXT</p>
+    </div>
+    
+  </div>
+
+<hr>
+        
+  <div class="row">
+    
+      <div class="col">
+           <div class="card">
+              <img src="bg2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some text</p>
+              </div>
+            </div>
+    </div>
+    <div class="col">
+           <div class="card">
+              <img src="bg2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some text</p>
+              </div>
+            </div>
+    </div>
+    <div class="col">
+           <div class="card">
+              <img src="bg2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some text</p>
+              </div>
+            </div>
+    </div>
+  </div>
+
+<hr>
+        
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+    <h2 class="text-warning">Code</h2>
+<pre style='background-color:#f8f9fa'><code>&lt;div class="row"&gt;
+    &lt;div class="col"&gt;
+           &lt;div class="card"&gt;
+              &lt;img src="bg2.jpg" class="card-img-top" alt="..."&gt;
+              &lt;div class="card-body"&gt;
+                &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+                &lt;p class="card-text"&gt;Some text&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col"&gt;
+           &lt;div class="card"&gt;
+              &lt;img src="bg2.jpg" class="card-img-top" alt="..."&gt;
+              &lt;div class="card-body"&gt;
+                &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+                &lt;p class="card-text"&gt;Some text&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col"&gt;
+           &lt;div class="card"&gt;
+              &lt;img src="bg2.jpg" class="card-img-top" alt="..."&gt;
+              &lt;div class="card-body"&gt;
+                &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+                &lt;p class="card-text"&gt;Some text&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;</code></pre>
+    </div>
+</div>
+
+
+<hr>
+    
+
+    
+<div class="row">
+    <div class="col">
+    <h2 class="text-danger">Breakpoint</h2>
+<pre style='background-color:#f8f9fa'><code>// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: <span class="badge badge-primary">576px</span>) { ... }
+
+// Medium devices (tablets, <span class="badge badge-success">768px</span> and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, <span class="badge badge-info">992px</span> and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, <span class="badge badge-warning">1200px</span> and up)
+@media (min-width: 1200px) { ... }</code></pre>
+    </div>
+</div>    
+    
+<hr>
+
+    
+
+<div class="row">
+    <div class="col">
+
+ <p>Using <span class="badge badge-primary">"col-sm"</span> placed with <span class="badge badge-primary">"col"</span> the columns will be the same size up to a minimum resolution of 540px.
+Below this resolution each column takes 100% of the horizontal space.</p>
+  <div class="row">
+    <div class="col-sm">
+           <div class="card">
+              <img src="bg2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some text</p>
+              </div>
+            </div>
+    </div>
+    <div class="col-sm">
+           <div class="card">
+              <img src="bg2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some text</p>
+              </div>
+            </div>
+    </div>
+    <div class="col-sm">
+           <div class="card">
+              <img src="bg2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some text</p>
+              </div>
+            </div>
+    </div>
+  </div>
+
+        
+        
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+    <h2 class="text-warning">Code</h2>
+<pre style='background-color:#f8f9fa'><code>&lt;div class="row"&gt;
+    &lt;div class="col<mark>-sm</mark>"&gt;
+           &lt;div class="card"&gt;
+              &lt;img src="bg2.jpg" class="card-img-top" alt="..."&gt;
+              &lt;div class="card-body"&gt;
+                &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+                &lt;p class="card-text"&gt;Some text&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col<mark>-sm</mark>"&gt;
+           &lt;div class="card"&gt;
+              &lt;img src="bg2.jpg" class="card-img-top" alt="..."&gt;
+              &lt;div class="card-body"&gt;
+                &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+                &lt;p class="card-text"&gt;Some text&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col<mark>-sm</mark>"&gt;
+           &lt;div class="card"&gt;
+              &lt;img src="bg2.jpg" class="card-img-top" alt="..."&gt;
+              &lt;div class="card-body"&gt;
+                &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+                &lt;p class="card-text"&gt;Some text&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;</code></pre>
+    </div>
+</div>
+
+
+<hr>
+
+
+
+
+<div class="row">
+    <div class="col">
+
+ 
+<p>Using <span class="badge badge-primary">"col-6"</span> is possible to specify a single column dimension. It's independant by the width browser view.</p>
+  <div class="row">
+    <div class="col">
+           <div class="card">
+              <img src="bg2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some text</p>
+              </div>
+            </div>
+    </div>
+    <div class="col-6">
+           <div class="card">
+              <img src="bg2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some text</p>
+              </div>
+            </div>
+    </div>
+    <div class="col">
+           <div class="card">
+              <img src="bg2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some text</p>
+              </div>
+            </div>
+    </div>
+  </div>
+        
+        
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+    <h2 class="text-warning">Code</h2>
+<pre style='background-color:#f8f9fa'><code>&lt;div class="row"&gt;
+    &lt;div class="col"&gt;
+           &lt;div class="card"&gt;
+              &lt;img src="bg2.jpg" class="card-img-top" alt="..."&gt;
+              &lt;div class="card-body"&gt;
+                &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+                &lt;p class="card-text"&gt;Some text&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col<mark>-6</mark>"&gt;
+           &lt;div class="card"&gt;
+              &lt;img src="bg2.jpg" class="card-img-top" alt="..."&gt;
+              &lt;div class="card-body"&gt;
+                &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+                &lt;p class="card-text"&gt;Some text&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col"&gt;
+           &lt;div class="card"&gt;
+              &lt;img src="bg2.jpg" class="card-img-top" alt="..."&gt;
+              &lt;div class="card-body"&gt;
+                &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+                &lt;p class="card-text"&gt;Some text&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+<hr>
+
+
+
+
+<div class="row">
+    <div class="col">
+ 
+<p>Using <span class="badge badge-primary">"col-auto"</span> is possible to adapt a single column dimension in auto mode. It's independant by the width browser view.</p>
+  <div class="row">
+    <div class="col">
+           <div class="card">
+              <img src="bg2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some text</p>
+              </div>
+            </div>
+    </div>
+    <div class="col-auto">
+           Variable width content
+    </div>
+    <div class="col">
+           <div class="card">
+              <img src="bg2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some text</p>
+              </div>
+            </div>
+    </div>
+  </div>
+
+        
+        
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+    <h2 class="text-warning">Code</h2>
+<pre style='background-color:#f8f9fa'><code>&lt;div class="row"&gt;
+    &lt;div class="col"&gt;
+           &lt;div class="card"&gt;
+              &lt;img src="bg2.jpg" class="card-img-top" alt="..."&gt;
+              &lt;div class="card-body"&gt;
+                &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+                &lt;p class="card-text"&gt;Some text&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col<mark>-auto</mark>"&gt;
+           Variable width content
+    &lt;/div&gt;
+    &lt;div class="col"&gt;
+           &lt;div class="card"&gt;
+              &lt;img src="bg2.jpg" class="card-img-top" alt="..."&gt;
+              &lt;div class="card-body"&gt;
+                &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+                &lt;p class="card-text"&gt;Some text&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+<hr>
+
+
+
+
+<div class="row">
+    <div class="col">
+  <h1 class="text-primary">Alignment</h1>
+<p>Using <span class="badge badge-primary">"justify-content-start"</span>,  <span class="badge badge-primary">"justify-content-center"</span>,  <span class="badge badge-primary">"justify-content-end"</span>,  <span class="badge badge-primary">"justify-content-around"</span> and  <span class="badge badge-primary">"justify-content-between"</span> is possible to change the the arrangement of the blocks</p>
+ 
+ <h4 class="text-success">justify-content-start</h4>
+  <div class="row justify-content-start">
+    <div class="col-2">
+           <div class="card">
+              <img src="bg2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some text</p>
+              </div>
+            </div>
+    </div>
+    <div class="col-4">
+           <div class="card">
+              <img src="bg2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some text</p>
+              </div>
+            </div>
+    </div>
+        </div>       
+        
+    </div>
+</div>
+<hr>
+<h4 class="text-success">justify-content-center</h4>
+<div class="row">
+    <div class="col">
+ 
+  <div class="row justify-content-center">
+    <div class="col-2">
+           <div class="card">
+              <img src="bg2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some text</p>
+              </div>
+            </div>
+    </div>
+    <div class="col-4">
+           <div class="card">
+              <img src="bg2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some text</p>
+              </div>
+            </div>
+    </div>
+        </div>       
+        
+    </div>
+</div>
+<hr>
+<h4 class="text-success">justify-content-end</h4>
+<div class="row">
+    <div class="col">
+ 
+  <div class="row justify-content-end">
+    <div class="col-2">
+           <div class="card">
+              <img src="bg2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some text</p>
+              </div>
+            </div>
+    </div>
+    <div class="col-4">
+           <div class="card">
+              <img src="bg2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some text</p>
+              </div>
+            </div>
+    </div>
+        </div>       
+        
+    </div>
+</div>
+
+<hr>
+<h4 class="text-success">justify-content-around</h4>
+
+<div class="row">
+    <div class="col">
+ 
+  <div class="row justify-content-around">
+    <div class="col-2">
+           <div class="card">
+              <img src="bg2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some text</p>
+              </div>
+            </div>
+    </div>
+    <div class="col-4">
+           <div class="card">
+              <img src="bg2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some text</p>
+              </div>
+            </div>
+    </div>
+        </div>       
+        
+    </div>
+</div>
+
+<hr>
+<h4 class="text-success">justify-content-between</h4>
+
+<div class="row">
+    <div class="col">
+ 
+  <div class="row justify-content-between">
+    <div class="col-2">
+           <div class="card">
+              <img src="bg2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some text</p>
+              </div>
+            </div>
+    </div>
+    <div class="col-4">
+           <div class="card">
+              <img src="bg2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some text</p>
+              </div>
+            </div>
+    </div>
+        </div>       
+        
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col">
+    <h2 class="text-warning">Code</h2>
+<pre style='background-color:#f8f9fa'><code>&lt;div class="row <mark>justify-content-start</mark>"&gt;
+    &lt;div class="col-2"&gt;
+           &lt;div class="card"&gt;
+              &lt;img src="bg2.jpg" class="card-img-top" alt="..."&gt;
+              &lt;div class="card-body"&gt;
+                &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+                &lt;p class="card-text"&gt;Some text&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-4"&gt;
+           &lt;div class="card"&gt;
+              &lt;img src="bg2.jpg" class="card-img-top" alt="..."&gt;
+              &lt;div class="card-body"&gt;
+                &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+                &lt;p class="card-text"&gt;Some text&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;</code></pre>
+    </div>
+</div>
+
+
+
+
+<hr>
+
+
+
+
+<div class="row">
+    <div class="col">
+ <h1 class="text-primary">Offset</h1>
+<p>Offset handling still the same used in old version 3</p>
+  <div class="row">
+    <div class="col-4">
+           <div class="card">
+              <img src="bg2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some text</p>
+              </div>
+            </div>
+    </div>
+    <div class="col-4 offset-3">
+           <div class="card">
+              <img src="bg2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some text</p>
+              </div>
+            </div>
+    </div>
+  </div>
+
+        
+        
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+    <h2 class="text-warning">Code</h2>
+<pre style='background-color:#f8f9fa'><code>  &lt;div class="row"&gt;
+    &lt;div class="col-4"&gt;
+           &lt;div class="card"&gt;
+              &lt;img src="bg2.jpg" class="card-img-top" alt="..."&gt;
+              &lt;div class="card-body"&gt;
+                &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+                &lt;p class="card-text"&gt;Some text&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-4 <mark>offset-3</mark>"&gt;
+           &lt;div class="card"&gt;
+              &lt;img src="bg2.jpg" class="card-img-top" alt="..."&gt;
+              &lt;div class="card-body"&gt;
+                &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+                &lt;p class="card-text"&gt;Some text&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;</code></pre>
+    </div>
+</div>
+
+
+
+
+</div>
+  </body>
+</html>
